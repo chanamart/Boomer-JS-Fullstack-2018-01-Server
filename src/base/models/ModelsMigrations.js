@@ -48,7 +48,6 @@ export default class ModelsMigrations {
   }
 
   async runSeeders({ models, folder = 'seeders' }) {
-    console.log(models);
     const migrator = this._getUmzug({ models, folder });
     return this.client.authenticate().then(() => migrator.up());
   }

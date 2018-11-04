@@ -118,7 +118,6 @@ var RouteAuths = (_dec = _Route3.default.Route({
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                console.log(ctx.request.body);
                 body = ctx.request.body;
 
                 if (body.password_confirmation !== body.password) {

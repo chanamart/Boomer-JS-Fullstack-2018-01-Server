@@ -152,7 +152,6 @@ var RouteIndex = (_dec = _Route3.default.Route({
                 for (index = 0; index < top.length; index++) {
                   top[index].dataValues.rank = index + 1;
                 }
-                console.log(top);
                 this.sendOk(ctx, top);
 
               case 8:

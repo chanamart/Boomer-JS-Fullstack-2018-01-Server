@@ -31,7 +31,6 @@ io.on('connection', (ctx) => {
   })
 
   ctx.socket.on('playerClick', async () => {
-    console.log('playerClick')
     if (await models.rooms.increaseCount({ models: models, id: ctx.roomId }) === 'destroy') {
       const score = await models.users.defeat({ userId: ctx.userId });
       ctx.socket.emit("score", score);

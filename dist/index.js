@@ -54,7 +54,6 @@ io.on('connection', function (ctx) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            console.log('playerClick');
             _context.next = 3;
             return models.rooms.increaseCount({ models: models, id: ctx.roomId });
 

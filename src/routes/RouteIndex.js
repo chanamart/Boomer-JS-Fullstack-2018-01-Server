@@ -28,7 +28,6 @@ export default class RouteIndex extends Route {
     for (let index = 0; index < top.length; index++) {
       top[index].dataValues.rank = index + 1;      
     }
-    console.log(top);
     this.sendOk(ctx, top);
   }
 }

@@ -17,7 +17,6 @@ export default class RouteAuths extends Route {
     },
   })
   async signup(ctx) {
-    console.log(ctx.request.body);
     const body = ctx.request.body;
     if (body.password_confirmation !== body.password) {
       this.throw(400, ctx.state.__('Different password'));

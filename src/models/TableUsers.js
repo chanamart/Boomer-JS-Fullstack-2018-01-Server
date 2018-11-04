@@ -82,7 +82,6 @@ Table.gainScore = async ({ models, roomId, userId }) => {
     return Table.getUserById(userId).then(user => {
       return Table.updateOne({ score: user.score + (5 * multiplier) }, { where: { id: userId } }).then(user => {
         return Table.getUserById(userId).then(user => {
-          console.log(user.score);
           return user.score;
         });
       });
@@ -94,7 +93,6 @@ Table.defeat = async ({ userId }) => {
   return Table.getUserById(userId).then(user => {
     return Table.updateOne({ score: (user.score) / 2, defeat: user.defeat + 1 }, { where: { id: userId } }).then(user => {
       return Table.getUserById(userId).then(user => {
-        console.log("Console defeat = ", user.score);
         return user.score;
       });
     });

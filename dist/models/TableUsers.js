@@ -186,7 +186,6 @@ Table.gainScore = function () {
               return Table.getUserById(userId).then(function (user) {
                 return Table.updateOne({ score: user.score + 5 * multiplier }, { where: { id: userId } }).then(function (user) {
                   return Table.getUserById(userId).then(function (user) {
-                    console.log(user.score);
                     return user.score;
                   });
                 });
@@ -216,7 +215,6 @@ Table.defeat = function () {
             return _context6.abrupt('return', Table.getUserById(userId).then(function (user) {
               return Table.updateOne({ score: user.score / 2, defeat: user.defeat + 1 }, { where: { id: userId } }).then(function (user) {
                 return Table.getUserById(userId).then(function (user) {
-                  console.log("Console defeat = ", user.score);
                   return user.score;
                 });
               });

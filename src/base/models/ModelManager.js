@@ -10,7 +10,6 @@ import ModelsMigrations from './ModelsMigrations';
 
 export default class ModelManager {
   constructor() {
-    console.log(config);
     this.configBDD = config.database;
     this.sequelize = new Sequelize(config.database.database, config.database.username, config.database.password, {    
       host: config.database.host,
@@ -64,7 +63,6 @@ export default class ModelManager {
     const models = this.initModels();
     const folder = `seeders/${process.env.NODE_ENV || process.env.ENV || 'development'}`;
     return this.modelsMigrations.runSeeders({ models, folder }).catch((err) => {
-      console.log('[ERROR][SEEDERS] folder:', folder, 'does not exist', err);
     });
   }
 }

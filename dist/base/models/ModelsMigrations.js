@@ -151,7 +151,6 @@ var ModelsMigrations = function () {
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
-                console.log(models);
                 migrator = this._getUmzug({ models: models, folder: folder });
                 return _context3.abrupt('return', this.client.authenticate().then(function () {
                   return migrator.up();
