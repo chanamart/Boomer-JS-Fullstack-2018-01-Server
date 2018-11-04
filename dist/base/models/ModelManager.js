@@ -134,8 +134,7 @@ var ModelManager = function () {
               case 0:
                 models = this.initModels();
                 folder = 'seeders/' + (process.env.NODE_ENV || process.env.ENV || 'development');
-                return _context2.abrupt('return', this.modelsMigrations.runSeeders({ models: models, folder: folder }).catch(function (err) {
-                }));
+                return _context2.abrupt('return', this.modelsMigrations.runSeeders({ models: models, folder: folder }).catch(function (err) {}));
 
               case 3:
               case 'end':

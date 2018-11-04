@@ -21,11 +21,11 @@ module.exports = {
               return queryInterface.bulkInsert('difficulties', [{
                 multiplier: 1,
                 loss: 1,
-                click_nbr: 10,
+                click_nbr: 30,
                 hard: false,
                 title: "Easy",
                 background: "https://orig00.deviantart.net/f5b6/f/2013/292/6/9/epoch_by_caephuier-d6r3nag.png",
-                description: "This is Room n°1, it is quite easy."
+                description: "This is an easy room, for frightened little girls.\nYou will get a smaller amount of points and won't lose much when the room blows."
               }, {
                 multiplier: 2,
                 loss: 2,
@@ -33,55 +33,55 @@ module.exports = {
                 hard: false,
                 title: "Medium",
                 background: "https://www.wallpaperup.com/uploads/wallpapers/2015/11/05/829280/fb5029f42388487a229175ef9f9bb97a.jpg",
-                description: "This is Room n°2, for a medium experience."
+                description: "This is a medium room, practice and get better.\nYou will get a nice amount of points and will lose a bit more than in easy."
               }, {
                 multiplier: 3,
                 loss: 3,
-                click_nbr: 30,
+                click_nbr: 20,
                 hard: true,
                 title: "Hard",
                 background: "https://pbs.twimg.com/media/DRd9ThiXkAAUjxX.jpg:large",
-                description: "This is Room n°3, the challenge begins !"
+                description: "This is a hard room, the challenge begins.\nYou will get a large amount of points and will lose half of it."
               }, {
                 multiplier: 4,
                 loss: 4,
-                click_nbr: 25,
+                click_nbr: 15,
                 hard: true,
                 title: "Evil",
                 background: "https://images7.alphacoders.com/528/528418.jpg",
-                description: "This is Room n°4, you'll die after the first click !"
+                description: "This is an evil room, you'll die after the first click.\nYou will get an enormous amount of points and will lose everything."
               }, {
                 multiplier: 1,
                 loss: 1,
-                click_nbr: 15,
+                click_nbr: 35,
                 hard: false,
                 title: "Easy",
                 background: "https://cdna.artstation.com/p/assets/images/images/003/052/182/large/todor-hristov-2.jpg?1469028977",
-                description: "This is Room n°5, it is quite easy."
+                description: "This is an easy room, for frightened little girls.\nYou will get a smaller amount of points and won't lose much when the room blows."
               }, {
                 multiplier: 2,
                 loss: 2,
-                click_nbr: 35,
+                click_nbr: 25,
                 hard: false,
                 title: "Medium",
                 background: "https://steamusercontent-a.akamaihd.net/ugc/925926525727156292/1F08870D3FCA29ED959BE10348AA4CECB06879D5/",
-                description: "This is Room n°6, for a medium experience."
+                description: "This is a medium room, practice and get better.\nYou will get a nice amount of points and will lose a bit more than in easy."
               }, {
                 multiplier: 3,
                 loss: 3,
-                click_nbr: 5,
+                click_nbr: 15,
                 hard: true,
                 title: "Hard",
                 background: "https://i.gifer.com/RQnj.gif",
-                description: "This is Room n°7, the challenge begins !"
+                description: "This is a hard room, the challenge begins.\nYou will get a large amount of points and will lose half of it."
               }, {
                 multiplier: 4,
                 loss: 4,
-                click_nbr: 2,
+                click_nbr: 10,
                 hard: true,
                 title: "Evil",
                 background: "https://media.giphy.com/media/MWL7evUUaBvzi/giphy.gif",
-                description: "This is Room n°8, you'll die after the first click !"
+                description: "This is an evil room, you'll die after the first click.\nYou will get an enormous amount of points and will lose everything."
               }], {});
 
             case 2:

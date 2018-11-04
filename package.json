@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon --exec babel-node src/index.js",
     "start": "npm run dev",
-    "prod": "node NODE_ENV=production dist/index.js",
+    "prod": "cross-env NODE_ENV=production node dist/index.js",
     "_rm-build-prod": "rimraf dist",
     "_build-prod": "cross-env NODE_ENV=production babel src --out-dir dist --copy-files",
     "build-prod": "npm run _rm-build-prod && npm run _build-prod",

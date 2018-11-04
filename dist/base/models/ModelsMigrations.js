@@ -156,7 +156,7 @@ var ModelsMigrations = function () {
                   return migrator.up();
                 }));
 
-              case 3:
+              case 2:
               case 'end':
                 return _context3.stop();
             }

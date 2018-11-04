@@ -154,7 +154,7 @@ var RouteIndex = (_dec = _Route3.default.Route({
                 }
                 this.sendOk(ctx, top);
 
-              case 8:
+              case 7:
               case 'end':
                 return _context2.stop();
             }

@@ -15,7 +15,7 @@ module.exports = {
   },
   "production": {
     "username": "root",
-    "password": "Xp80QiZM47",
+    "password": null,
     "database": "JsFullStack_production",
     "host": "127.0.0.1",
     "dialect": "mysql"

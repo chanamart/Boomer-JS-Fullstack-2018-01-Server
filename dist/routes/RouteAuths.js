@@ -123,20 +123,20 @@ var RouteAuths = (_dec = _Route3.default.Route({
                 if (body.password_confirmation !== body.password) {
                   this.throw(400, ctx.state.__('Different password'));
                 }
-                _context.next = 5;
+                _context.next = 4;
                 return this.model.create((0, _extends3.default)({}, body));
 
-              case 5:
+              case 4:
                 user = _context.sent;
-                _context.next = 8;
+                _context.next = 7;
                 return this._addUserInBody(ctx, user.id);
 
-              case 8:
+              case 7:
                 userInBody = _context.sent;
 
                 this.sendCreated(ctx, userInBody, ctx.state.__('Your account has been created'));
 
-              case 10:
+              case 9:
               case 'end':
                 return _context.stop();
             }

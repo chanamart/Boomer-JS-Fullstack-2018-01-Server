@@ -54,41 +54,41 @@ io.on('connection', function (ctx) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            _context.next = 3;
+            _context.next = 2;
             return models.rooms.increaseCount({ models: models, id: ctx.roomId });
 
-          case 3:
+          case 2:
             _context.t0 = _context.sent;
 
             if (!(_context.t0 === 'destroy')) {
-              _context.next = 12;
+              _context.next = 11;
               break;
             }
 
-            _context.next = 7;
+            _context.next = 6;
             return models.users.defeat({ userId: ctx.userId });
 
-          case 7:
+          case 6:
             score = _context.sent;
 
             ctx.socket.emit("score", score);
             io.socket.to(ctx.roomId).emit("destroy", {});
-            _context.next = 16;
+            _context.next = 15;
             break;
 
-          case 12:
-            _context.next = 14;
+          case 11:
+            _context.next = 13;
             return models.users.gainScore({ models: models, roomId: ctx.roomId, userId: ctx.userId });
 
-          case 14:
+          case 13:
             _score = _context.sent;
 
             ctx.socket.emit("score", _score);
 
-          case 16:
+          case 15:
             ;
 
-          case 17:
+          case 16:
           case 'end':
             return _context.stop();
         }
