@@ -4,3 +4,5 @@ apidoc/api_data.js
 apidoc/api_data.json
 apidoc/api_project.js
 apidoc/api_project.json
+
+dist/

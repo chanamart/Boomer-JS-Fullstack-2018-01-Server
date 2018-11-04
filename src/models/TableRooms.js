@@ -1,6 +1,4 @@
 import Sequelize from 'sequelize';
-import { randomBytes } from 'crypto';
-import { cpus } from 'os';
 
 const tableName = 'rooms';
 

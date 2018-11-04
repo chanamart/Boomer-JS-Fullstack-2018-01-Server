@@ -1,20 +1,20 @@
 # Boomer-JS-Fullstack-2018-01-Server
 
+## API using koa-smart and sequelize
+
 ## Directory structure
 
 The repository root contains auxiliary files like `package.json`, `.gitignore`, etc.
 
-- `config`: the bdd's configuration is stored here
+- `config`: the database's configuration is stored here
 - `src`: the app's code is stored here
-  - `db`: the migration's files is stored here (migration/seeders)
+  - `db`: the migration's files are stored here (migration/seeders)
   - `locales`: all files needed to Internationalize your api (I18n)
   - `routes`: API endpoints go here, all files extending the RouteBase class will be loaded automatically
-  - `models`: the migration's files is stored here (migration/seeders)
+  - `models`: Tables go here, sequelize models that you will be able to use later
   - `middleware`: custom middleware for your application, written koa-style.
 
 ## Get started
-
-Clone this repository, remove the `.git` directory, run `git init`, and adjust details in `package.json`.
 
 Before installing, [download and install Node.js](https://nodejs.org/en/download/). **Node.js v10.13.0** or higher will be required.
 
@@ -22,10 +22,13 @@ Before installing, [download and install Node.js](https://nodejs.org/en/download
   `npm install`
 - **Create database**
   `npx sequelize db:create`
+  `npx sequelize db:create --env production`
 - **Migrate database**
   `npx sequelize db:migrate`
+  `npx sequelize db:migrate --env production`
 - **Fill database**
   `npx sequelize db:seed:all`
+  `npx sequelize db:seed:all --env production`
 - **Run Dev**
   `npm start`
 - **Build the Prod**

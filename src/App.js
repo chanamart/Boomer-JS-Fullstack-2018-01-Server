@@ -31,17 +31,10 @@ export default class App extends AppBase {
       // routeParam is an object and it will be give as parametter to all routes
       // so for example you can give models to all your route so you can access on route
       routeParam: {},
-      generateDoc: true, // indicates we want generate documentation automatically
-      docPath: join(__dirname, '..', 'apidoc'),
     });
   }
 
   async start() {
-    // TODO pass all models to all routes.
-    // Eg:
-    //    const models = await getModels()
-    //    this.routeParam.models = models
-
     // we add the relevant middlewares to our API
     super.addMiddlewares([
       cors({ 
