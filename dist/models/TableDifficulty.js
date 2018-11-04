@@ -37,6 +37,11 @@ var Table = global.sequelize.define(tableName, {
     allowNull: false,
     trim: true
   },
+  background: {
+    type: _sequelize2.default.STRING,
+    allowNull: false,
+    trim: true
+  },
   multiplier: {
     type: _sequelize2.default.INTEGER,
     allowNull: false,
@@ -81,7 +86,7 @@ Table.getDifficultyById = function () {
         switch (_context.prev = _context.next) {
           case 0:
             return _context.abrupt('return', Table.findById(id, {
-              attributes: ['id', 'title', 'description', 'multiplier', 'loss', 'click_nbr']
+              attributes: ['id', 'title', 'description', 'background', 'multiplier', 'loss', 'click_nbr']
             }));
 
           case 1:

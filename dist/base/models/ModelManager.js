@@ -49,6 +49,7 @@ var ModelManager = function () {
   function ModelManager() {
     (0, _classCallCheck3.default)(this, ModelManager);
 
+    console.log(_config2.default);
     this.configBDD = _config2.default.database;
     this.sequelize = new _sequelize2.default(_config2.default.database.database, _config2.default.database.username, _config2.default.database.password, {
       host: _config2.default.database.host,

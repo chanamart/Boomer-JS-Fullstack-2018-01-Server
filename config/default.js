@@ -2,6 +2,8 @@ var packageJson = require('../package.json');
 
 const port = process.env.PORT || 3001;
 
+console.log(process.env)
+
 module.exports = {
   appName: 'My App',
   name: packageJson.name,

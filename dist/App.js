@@ -68,7 +68,7 @@ var App = function (_AppBase) {
   function App() {
     (0, _classCallCheck3.default)(this, App);
     return (0, _possibleConstructorReturn3.default)(this, (App.__proto__ || (0, _getPrototypeOf2.default)(App)).call(this, {
-      port: 3000,
+      port: 3001,
       // routeParam is an object and it will be give as parametter to all routes
       // so for example you can give models to all your route so you can access on route
       routeParam: {},

@@ -166,9 +166,11 @@ Table.checkDestroy = function () {
                 return 'alive';
               } else {
                 return Table.destroy({ where: { id: id } }).then(function (room) {
-                  return Table.create({ hot_potatoe: "potatoe.png", background: "back.png", level: Math.floor(Math.random() * Math.floor(7) + 1) }).then(function (room) {
-                    return 'destroy';
-                  });
+                  if (room) {
+                    return Table.create({ hot_potatoe: "potatoe.png", background: "back.png", level: Math.floor(Math.random() * Math.floor(8)) + 1 }).then(function (room) {
+                      return 'destroy';
+                    });
+                  }
                 });
               }
             }));
