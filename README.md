@@ -32,3 +32,9 @@ Before installing, [download and install Node.js](https://nodejs.org/en/download
   `npm run build-prod`
 - **Run Prod**
   `npm run prod`
+
+## Licence
+
+. Alexandre Martins
+. Beno�t Sommervogel
+. Thomas Lenoel
