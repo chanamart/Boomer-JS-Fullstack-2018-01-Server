@@ -21,14 +21,11 @@ Before installing, [download and install Node.js](https://nodejs.org/en/download
 - **Install package**
   `npm install`
 - **Create database**
-  `npx sequelize db:create`
-  `npx sequelize db:create --env production`
+  `npx sequelize db:create` if env is production `npx sequelize db:create --env production`
 - **Migrate database**
-  `npx sequelize db:migrate`
-  `npx sequelize db:migrate --env production`
+  `npx sequelize db:migrate` if env is production `npx sequelize db:migrate --env production`
 - **Fill database**
-  `npx sequelize db:seed:all`
-  `npx sequelize db:seed:all --env production`
+  `npx sequelize db:seed:all` if env is production `npx sequelize db:seed:all --env production`
 - **Run Dev**
   `npm start`
 - **Build the Prod**
