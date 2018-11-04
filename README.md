@@ -36,5 +36,5 @@ Before installing, [download and install Node.js](https://nodejs.org/en/download
 ## Licence
 
 . Alexandre Martins
-. Beno�t Sommervogel
+. Benoit Sommervogel
 . Thomas Lenoel
